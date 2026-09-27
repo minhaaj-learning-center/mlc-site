@@ -43,7 +43,9 @@ function createHarness({ legacyMediaQuery = false, year = 2031 } = {}) {
   menu.removeAttribute = (name) => { if (name === 'open') menu.open = false; };
 
   const yearNode = { textContent: '2026' };
+  const documentElement = { classList: { add() {} } };
   const document = new EventTarget();
+  document.documentElement = documentElement;
   document.querySelector = (selector) => selector === '[data-mobile-menu]' ? menu : null;
   document.querySelectorAll = (selector) => selector === '[data-current-year]' ? [yearNode] : [];
 

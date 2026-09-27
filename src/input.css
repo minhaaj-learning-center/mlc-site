@@ -39,6 +39,22 @@
 }
 
 @layer components {
+  .js main > section.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 700ms ease-out, transform 700ms ease-out;
+  }
+
+  .js main > section.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .js main > section:first-child.reveal-on-scroll {
+    transform: none;
+    transition: opacity 350ms ease-out;
+  }
+
   .site-shell {
     @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
   }
@@ -98,6 +114,15 @@
       background-position: center bottom;
       background-size: 100% auto;
       padding-bottom: 22rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js main > section.reveal-on-scroll,
+    .js main > section.reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: none;
+      transition: none;
     }
   }
 
