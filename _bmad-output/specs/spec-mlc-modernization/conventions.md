@@ -28,6 +28,7 @@
 - Favor generous whitespace, restrained geometry, refined typography, and subtle Islamic visual references over ornate decoration.
 - Build the hero entirely with HTML and CSS: institution name, concise value proposition, weekend-school context, primary registration action, and optional lightweight geometric ornament.
 - Do not use images containing essential text.
+- Use the supplied local photography as supporting visual content: optimize it for web delivery, provide descriptive alternative text, and keep it subordinate to the page's authored copy and actions.
 
 ## Quality floor
 

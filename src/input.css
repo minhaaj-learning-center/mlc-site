@@ -80,13 +80,14 @@
   .about-page main > section:nth-child(3) {
     background-image: url('../matt.jpg');
     background-repeat: no-repeat;
-    background-position: right 8% center;
-    background-size: min(28vw, 26rem) auto;
+    background-position: right center;
+    background-size: auto 100%;
   }
 
   @media (min-width: 48rem) {
     .about-page main > section:nth-child(3) figure {
-      max-width: 50rem;
+      width: 68%;
+      max-width: none;
       margin-left: 0;
       margin-right: auto;
     }

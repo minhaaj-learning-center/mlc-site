@@ -56,4 +56,5 @@ Minhaaj Learning Center needs a clear, credible mobile presence that makes regis
 ## Assumptions
 
 - Existing prose may be lightly corrected and reorganized for clarity while preserving its religious meaning and factual claims.
+- The current authored wording is canonical: use “Qur'an” throughout, describe Fiqh as guided by Islam's core pillars and the conditions and integrals of worship, and describe Tafseer as helping students understand Qur'anic guidance and meanings of verses that befit Allah.
 - The current address, phone number, and email remain valid until MLC provides replacements.

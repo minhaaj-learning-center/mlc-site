@@ -128,12 +128,12 @@ class StaticSiteMatrixTests(unittest.TestCase):
     def test_inventory_content_is_preserved(self):
         required = {
             "index.html": [
-                "affordable education without compromising quality", "Qur'aan recitation and memorization",
+                "affordable education without compromising quality", "Qur'an recitation and memorization",
                 "low teacher-to-student ratios", "multi-ethnic Muslim community", "pride in Muslim identity",
             ],
             "programs.html": [
                 "Three-hour sessions", "seven levels", "juzu' Amma", "Knowledge Retreats", "Creed of at-Tahawiyy",
-                "Al-Baqarah 2:222", "Islamic Manners", "Tafseer", "Islamic History", "Hadith", "Balaghah",
+                "Islamic Manners", "Tafseer", "Islamic History", "Hadith", "Balaghah",
             ],
             "about.html": [
                 "“Minhaaj” means “clear path", "traditional, authentic knowledge", "مَنْ سَلَكَ طَرِيْقًا",
