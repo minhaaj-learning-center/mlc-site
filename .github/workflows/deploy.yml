@@ -20,6 +20,13 @@ jobs:
       - run: npm run build
       - name: Remove non-site files from the deploy bundle
         run: rm -rf _bmad _bmad-output
+      - name: Ensure Pages project exists
+        uses: cloudflare/wrangler-action@v3
+        continue-on-error: true
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create mlc-site --production-branch=main
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
